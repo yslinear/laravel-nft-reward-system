@@ -1,0 +1,10 @@
+{
+    "laravel-pint.enable": true,
+    "editor.formatOnSave": true,
+    "laravel-pint.preset": "auto",
+    "[php]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
+    },
+    "files.saveConflictResolution": "overwriteFileOnDisk"
+}
