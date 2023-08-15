@@ -14,14 +14,14 @@ class Product extends Model
         'point',
         'nft_point',
         'description',
-        'product_category_id',
+        'category_id',
         'start_at',
         'end_at',
     ];
 
     public function category()
     {
-        return $this->belongsTo(ProductCategory::class, 'product_category_id');
+        return $this->belongsTo(ProductCategory::class);
     }
 
     public function productUsers()
