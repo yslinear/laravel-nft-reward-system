@@ -16,5 +16,7 @@ class Task extends Model
         'seed',
         'description',
         'nft',
+        'start_at',
+        'end_at',
     ];
 }

@@ -19,7 +19,8 @@ return new class extends Migration
             $table->integer('experience');
             $table->integer('seed');
             $table->string('description');
-
+            $table->timestamp('start_at');
+            $table->timestamp('end_at');
             $table->timestamps();
         });
     }
