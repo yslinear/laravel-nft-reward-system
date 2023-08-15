@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('point');
+            $table->integer('nft_point');
             $table->integer('experience');
             $table->integer('seed');
             $table->string('description');
-            $table->string('nft');
 
             $table->timestamps();
         });
