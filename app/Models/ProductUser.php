@@ -14,7 +14,7 @@ class ProductUser extends Model
     protected $fillable = [
         'product_id',
         'user_id',
-        'role_id',
+        'payment_method',
     ];
 
     public function product()
