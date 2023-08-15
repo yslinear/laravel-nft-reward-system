@@ -15,6 +15,8 @@ class Product extends Model
         'nft_point',
         'description',
         'product_category_id',
+        'start_at',
+        'end_at',
     ];
 
     public function category()

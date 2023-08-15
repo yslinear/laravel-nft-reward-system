@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('nft_point');
             $table->string('description');
             $table->unsignedBigInteger('product_category_id');
+            $table->timestamp('start_at');
+            $table->timestamp('end_at');
             $table->timestamps();
 
             $table->foreign('product_category_id')->references('id')->on('product_categories');
