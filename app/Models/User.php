@@ -42,4 +42,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function userDailyCheckInHistories()
+    {
+        return $this->hasMany(UserDailyCheckInHistory::class);
+    }
+
+    public function taskUsers()
+    {
+        return $this->hasMany(TaskUser::class);
+    }
+
+    public function productUsers()
+    {
+        return $this->hasMany(ProductUser::class);
+    }
 }

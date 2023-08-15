@@ -19,4 +19,9 @@ class Task extends Model
         'start_at',
         'end_at',
     ];
+
+    public function taskUsers()
+    {
+        return $this->hasMany(TaskUser::class);
+    }
 }
